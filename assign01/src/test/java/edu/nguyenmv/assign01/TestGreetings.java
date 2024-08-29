@@ -1,8 +1,9 @@
-package edu.realemj.assign01;
+package edu.nguyenmv.assign01;
 // NOTE: CHANGE realemj to YOUR SITNETID!!!
 import edu.realemj.testing.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class TestGreetings {
 
