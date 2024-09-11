@@ -3,7 +3,7 @@ module profexercisesmod {
     requires javafx.fxml;
     requires transitive javafx.graphics;
 
-
+    exports edu.realemj.exercises00;
 
 
 
