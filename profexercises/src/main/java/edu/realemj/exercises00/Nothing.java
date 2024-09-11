@@ -1,4 +1,4 @@
-package edu.nguyenmv.exercises00;
+package edu.realemj.exercises00;
 
 import edu.realemj.items.*;
 
