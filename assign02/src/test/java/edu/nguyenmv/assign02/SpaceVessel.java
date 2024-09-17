@@ -3,7 +3,7 @@ package edu.nguyenmv.assign02;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSpaceVessel {
+public class SpaceVessel {
     @Test()
     public void test_name() {
         SpaceVessel s1 = new SpaceVessel();

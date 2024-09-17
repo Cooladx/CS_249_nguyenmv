@@ -4,7 +4,7 @@ import edu.realemj.testing.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestArmada {
+public class Armada {
 
     private void compareEachLine(String actual, String expected, String typeData) {
         // Split each string
