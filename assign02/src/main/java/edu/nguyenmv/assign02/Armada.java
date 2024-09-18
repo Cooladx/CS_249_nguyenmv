@@ -6,25 +6,24 @@ public class Armada
  {
      public static void main(String[] args)
      {
-         int pounds = 0;
-         int feet = 0;
-         double meters = 0;
-         Scanner scanner = new Scanner(System.in);
+         Scanner input = new Scanner(System.in);
          SpaceVessel vessel = new SpaceVessel();
          System.out.println("Enter vessel name:");
-         String vesselName = scanner.nextLine();
+         String name = input.nextLine();
 
-         Scanner parseLine = new Scanner(vesselName);
-         pounds = parseLine.nextInt();
-         feet = parseLine.nextInt();
+         System.out.println("Enter length and weight:");
+         String line = input.nextLine(); // Read the length and weight as a single line
+         Scanner parseLine = new Scanner(line);
+         int feet = parseLine.nextInt();
+         int pounds = parseLine.nextInt();
 
 
-         vessel.setName(vesselName);
+         vessel.setName(name);
          vessel.setLength(feet);
          vessel.setWeight(pounds);
 
 
-        // System.out.println(vessel.toString());
+         vessel.toString();
 
 
 

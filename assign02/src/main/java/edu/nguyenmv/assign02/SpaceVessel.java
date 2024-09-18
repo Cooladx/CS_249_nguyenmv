@@ -6,6 +6,7 @@ public class SpaceVessel
     private int length = 0;
     private int weight = 0;
 
+
     public String getName()
     {
         return vesselName;
@@ -38,24 +39,27 @@ public class SpaceVessel
     {
 
         double meters = 0.3048 * length;
-       String formattedString = String.format("%.2f", meters);
-       return feet + "ft" + "(" + formattedString + ")";
+       //String lengthedString = String.format("%.2f", meters);
+       return length + "ft" + "(" + String.format("%.2f", meters)  + ")";
     }
 
     public String getWeightString()
     {
 
-        double kilograms = 0.4536 * weight;
-
+         double kilograms = 0.4536 * weight;
+        // String weighttedString = String.format("%.2f", kilograms);
+         return weight + "lbs.(" + String.format("%.2f", kilograms) + "kg)";
 
     }
 
     public String toString()
     {
+        return  "NAME: " + vesselName + "\n" +
+                "LENGTH: " + getLengthString() + "\n" +
+                "WEIGHT: " + getWeightString() + "\n";
 
-        return  "NAME:" + vesselName + "\n" +
-                "LENGTH:" + getLengthString() +
-                "\n"  "NAME:" + getWeightString() + "\n"
     }
+
+
 
 }
