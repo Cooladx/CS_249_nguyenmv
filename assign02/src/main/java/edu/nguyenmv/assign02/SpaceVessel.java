@@ -40,7 +40,7 @@ public class SpaceVessel
 
         double meters = 0.3048 * length;
        //String lengthedString = String.format("%.2f", meters);
-       return length + "ft" + "(" + String.format("%.2f", meters)  + ")";
+       return length + " ft. (" + String.format("%.2f", meters)  + " m)";
     }
 
     public String getWeightString()
@@ -48,7 +48,7 @@ public class SpaceVessel
 
          double kilograms = 0.4536 * weight;
         // String weighttedString = String.format("%.2f", kilograms);
-         return weight + "lbs.(" + String.format("%.2f", kilograms) + "kg)";
+         return weight + " lbs. (" + String.format("%.2f", kilograms) + " kg)";
 
     }
 

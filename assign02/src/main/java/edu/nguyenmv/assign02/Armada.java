@@ -23,8 +23,10 @@ public class Armada
          vessel.setWeight(pounds);
 
 
-         vessel.toString();
+         System.out.println(vessel);
 
+         parseLine.close(); // Close the second scanner
+         input.close(); // Close the first scanner
 
 
      }
