@@ -6,6 +6,13 @@ public class InfoCheck
  {
      public static void main(String[] args)
      {
+      /*  StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 100; i++)
+        {
+            sb.append("...")
+        }
+
+       */
      Scanner input = new Scanner(System.in) ;
      System.out.println("Enter name");
      String name = input.nextLine();
