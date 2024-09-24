@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.nguyenmv.exercises04.FordCheck"
+    mainClass = "edu.nguyenmv.exercises05.WagonGame"
     mainModule = "exercisesmod"
 }
 
