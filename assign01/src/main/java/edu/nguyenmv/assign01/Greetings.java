@@ -8,3 +8,5 @@ public class Greetings {
 
     }
 }
+
+// Hello!
