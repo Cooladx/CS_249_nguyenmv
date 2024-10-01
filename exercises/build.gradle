@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.nguyenmv.exercises06.L33tSpeak"
+    mainClass = "edu.nguyenmv.oregon.OregonTrail"
     mainModule = "exercisesmod"
 }
 
