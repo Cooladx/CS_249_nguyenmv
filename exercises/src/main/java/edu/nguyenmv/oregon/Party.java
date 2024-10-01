@@ -1,26 +1,21 @@
 package edu.nguyenmv.oregon;
 
-public class Party
-{
-private int partyCnt = 5;
+public class Party {
 
+    private int partyCnt = 5;
     // TODO
-
-    public int getPartyCnt()
-    {
+    public int getPartyCnt() {
         // TODO
         return partyCnt;
     }
 
-    public void killEveryone()
-    {
+    public void killEveryone() {
         partyCnt = 0;
     }
 
-    public String toString()
-    {
-        System.out.println("PARTY: ");
-        System.out.println(s += partyCnt + " Souls alive.");
+    public String toString() {
+        String s = "PARTY:\n";
+        s += partyCnt + " souls alive.\n";
         return s;
     }
 }
