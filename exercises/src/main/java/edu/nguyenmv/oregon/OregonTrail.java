@@ -1,7 +1,7 @@
 package edu.nguyenmv.oregon;
 
 import java.util.*;
-import edu.realemj.exercises03.Supplies;
+import edu.nguyenmv.exercises03.Supplies;
 
 public class OregonTrail {
     public static void main(String [] args) {
