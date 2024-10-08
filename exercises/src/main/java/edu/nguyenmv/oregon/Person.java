@@ -1,39 +1,34 @@
 package edu.nguyenmv.oregon;
 
-public class Person
-{
+public class Person {
     private String name;
     private boolean alive = true;
 
-
-
-    public Person(String name)
-    {
+    public Person(String name) {
         this.name = name;
-
-
     }
 
-    public boolean isAlive()
-    {
+    public String getName() {
+        return name;
+    }
+
+    public boolean isAlive() {
         return alive;
     }
 
-    public boolean kill()
-    {
+    public boolean kill() {
         boolean success = alive;
-            alive = false;
-            return success;
+        alive = false;
+        return success;
     }
 
-    public String toString()
-    {
+    public String toString() {
         String s = name;
-        if(!alive)
-        {
-            s += "(Deceased)";
+        if(!alive) {
+            s += " (Deceased)";
         }
         return s;
     }
+
 
 }
