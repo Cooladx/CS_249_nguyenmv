@@ -5,7 +5,17 @@ import edu.realemj.exercises03.Supplies;
 
 public class OregonTrail {
     public static void main(String [] args) {
+        System.out.println("Arg cnt: " + args.length);
+        for(int i = 0; i < args.length; i++) {
+            System.out.println(i + ": " + args[i]);
+        }
+
+
         Scanner input = new Scanner(System.in);
+
+        // Set who is in the party
+        Party party = Party.askForPartyMembers(input);
+
         // Set the starting supplies
         Supplies supplies = new Supplies();
 
@@ -13,9 +23,6 @@ public class OregonTrail {
         int food = input.nextInt();
         supplies.addFood(food);
         System.out.println(supplies);
-
-        // TODO: Set who is in the party
-        Party party = new Party();
 
         int milesTraveled = 0;
         double rations = 7;
