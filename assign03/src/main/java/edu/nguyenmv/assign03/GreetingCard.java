@@ -111,17 +111,17 @@ o For every 5 lines:
 o Return the single String containing all of these greeting cards
 
  */
-        StringBuilder cardCreater = new StringBuilder();
+        StringBuilder cardCreator = new StringBuilder();
         int totalLines = lines.length;
 
-        for (int i = 0; i < totalLines; i++)
+        for (int i = 0; i < totalLines; i+= 5)
         {
-            if (cardCreater.length() > 0)
+            if (cardCreator.length() > 0)
             {
-                cardCreater.append("\n");
+                cardCreator.append("\n");
             }
-            cardCreater.append(generateBoundaryLine());
-            cardCreater.append(generateBoundaryLine());
+            cardCreator.append(generateBoundaryLine());
+            cardCreator.append(generateBoundaryLine());
 
             int linesLeft = totalLines - i;
             int lineCnt;
@@ -139,12 +139,27 @@ o Return the single String containing all of these greeting cards
                 extraLineCnt = 0;
             }
 
-            cardCreater.append(lineCnt).append(extraLineCnt).append(generateBoundaryLine()).append(generateBoundaryLine());
-            return cardCreater.toString();
+            for (int j = 0; j < lineCnt; j++)
+            {
+            cardCreator.append(generateCenteredLine(lines[i + j]));
+            }
+
+            for (int j = 0; j < extraLineCnt; j++)
+            {
+            cardCreator.append(generateBoundaryLine());
+            }
+
+
+
+
+
+            cardCreator.append(generateBoundaryLine());
+            cardCreator.append(generateBoundaryLine());
+
         }
 
 
-        return "";
+        return cardCreator.toString();
 
     }
 
