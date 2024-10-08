@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.nguyenmv.oregon.OregonTrail"
+    mainClass = "edu.nguyenmv.exercises10.ShapeLand"
     mainModule = "exercisesmod"
 }
 
