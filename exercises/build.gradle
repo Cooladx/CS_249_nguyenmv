@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.nguyenmv.exercises10.ShapeLand"
+    mainClass = "edu.nguyenmv.test.microwave"
     mainModule = "exercisesmod"
 }
 
