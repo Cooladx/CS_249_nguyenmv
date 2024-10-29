@@ -7,6 +7,8 @@ public class ShapeWorld {
         Shape s1 = new Shape (8, 4, true);
         Shape s2 = new Shape (-7, -2, false);
         Circle c1 = new Circle();
+        Circle c2 = new Circle(Matrix.makePoint2D(1,2 ), false)
+        Circle c3 = new Circle (9, -2, false);
         c1.setPos(Matrix.makePoint2D(2,3));
         System.out.println(s1);
         System.out.println(s2);
