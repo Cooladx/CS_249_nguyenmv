@@ -19,7 +19,7 @@ private char [][] board;
     }
 
     public void clear() {
-f
+
     }
     public int getRowCnt(int colCnt) {
         return colCnt;
