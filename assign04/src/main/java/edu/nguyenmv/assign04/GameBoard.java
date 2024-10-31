@@ -12,14 +12,16 @@ private char [][] board;
         for (int i = 0; i < colCnt ; i++) {
             for (int j = 0; j < rowCnt ; j++) {
                 board[i][j] = fillChar;
-
             }
         }
-        return;
     }
 
     public void clear() {
-
+        for (int i = 0; i < colCnt; i++) {
+            for (int j = 0; j < rowCnt; j++) {
+                board[i][j] = fillChar;
+            }
+        }
     }
     public int getRowCnt(int colCnt) {
         return colCnt;
@@ -30,17 +32,27 @@ private char [][] board;
     }
 
     public boolean isValidPosition(int row, int col) {
-        return false;
+        if ((row >= 0 && row <= rowCnt) && (col >= 0 && col <= colCnt)) {
+        return true;
+        }
+        else {
+            return false;
+        }
+
 
     }
 
     public char getPos(int row, int col) {
-
+        if ((row >= 0 && row < rowCnt) && (col >= 0 && col < colCnt)) {
+            board[row][col] = fillChar;
+        }
+            return ' ';
     }
 
 
     public boolean setPos(int row, int col, char c) {
-        return false;
+        getPos( , col);
+
     }
 
     public String toString() {

@@ -1,7 +1,8 @@
 package edu.nguyenmv.exercises12;
 import edu.nguyenmv.exercises09.Matrix;
 public class Shape {
-
+private Matrix pos = Matrix.makeTranslation2D(0, 0);
+protected boolean filled = true;
     public Shape(Matrix pos, boolean filled) {
         this.filled = filled;
         setPos(pos);
@@ -34,7 +35,13 @@ public void setPos(Matrix pos) {
     String s = "Shape (" + pos.toPointString();
     if (filled) {
         s += ",filled";
+    }
+    s += ")";
         return s;
     }
+
+public double getArea() {
+        return 0;
 }
+
 }
