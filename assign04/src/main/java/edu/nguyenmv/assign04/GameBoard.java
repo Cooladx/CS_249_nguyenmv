@@ -23,40 +23,35 @@ private char [][] board;
             }
         }
     }
-    public int getRowCnt(int colCnt) {
+    public int getRowCnt() {
         return colCnt;
     }
 
-    public int getColCnt(int rowCnt) {
+    public int getColCnt() {
     return rowCnt;
     }
 
     public boolean isValidPosition(int row, int col) {
-        if ((row >= 0 && row <= rowCnt) && (col >= 0 && col <= colCnt)) {
-        return true;
-        }
-        else {
-            return false;
-        }
-
-
+        return (row >= 0 && row < rowCnt) && (col >= 0 && col < colCnt);
     }
 
     public char getPos(int row, int col) {
-        if ((row >= 0 && row < rowCnt) && (col >= 0 && col < colCnt)) {
-            board[row][col] = fillChar;
+        if ((row >= 0 && row <  rowCnt) && (col >= 0 && col < colCnt)) {
+             board[row][col] = fillChar;
         }
             return ' ';
     }
 
 
     public boolean setPos(int row, int col, char c) {
-        getPos( , col);
-
+        if ((row >= 0 && row <  rowCnt) && (col >= 0 && col < colCnt)) {
+            board[row][col] = c;
+        }
+        return true;
     }
 
     public String toString() {
-        return null;
+        return rowCnt + "x" + colCnt + "GameBoard(default: " + fillChar +")";
 
     }
 

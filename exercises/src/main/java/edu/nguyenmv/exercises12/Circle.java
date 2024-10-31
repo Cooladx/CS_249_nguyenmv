@@ -1,24 +1,35 @@
 package edu.nguyenmv.exercises12;
-
 import edu.nguyenmv.exercises09.Matrix;
 
 public class Circle extends Shape {
-private double radius = 1.0;
-    public Circle() {}
+    private double radius = 1.0;
 
-    public Circle (double x, double y, boolean filled) {
-      this(Matrix.makeTranslation2D(2, 3));
-        //this.filled = filled;
-      //setPos(Matrix.makePoint2D(x, y));
+    public Circle() {
+        // super();
     }
 
-    public Circle(Matrix pos, boolean filled ) {
+    public Circle(double radius) {
+        // super();
+        this.radius = radius;
+    }
+
+    public Circle(double x, double y, boolean filled) {
+        this(Matrix.makePoint2D(x,y), filled);
+        //this.filled = filled;
+        //setPos(Matrix.makePoint2D(x,y));
+    }
+
+    public Circle(Matrix pos, boolean filled) {
         super(pos, filled);
     }
 
     @Override
     public double getArea() {
         return Math.PI*radius*radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 
     @Override
