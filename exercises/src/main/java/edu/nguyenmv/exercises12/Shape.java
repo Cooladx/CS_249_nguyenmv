@@ -1,7 +1,7 @@
 package edu.nguyenmv.exercises12;
 
 import edu.nguyenmv.exercises09.Matrix;
-import edu.nguyenmv.exercises09.MathUtil;
+
 public class Shape {
     private Matrix pos = Matrix.makePoint2D(0,0);
     protected boolean filled = true;
@@ -45,25 +45,5 @@ public class Shape {
 
     public double getArea() {
         return 0;
-    }
-
-    @Override
-    public boolean equals(Object other) {
-        if(other instanceof Shape sother) {
-            return (filled == sother.filled && pos.equals(sother.pos));
-        }
-        else {
-            return false;
-        }
-    }
-
-    @Override
-    public boolean equals(Object other) {
-        if(other instanceof Circle otherCircle) {
-            return (MathUtil.isDoubleEqual(radius, otherCircle.radius) && super.equals(otherCircle));
-        }
-        else {
-            return false;
-        }
     }
 }
