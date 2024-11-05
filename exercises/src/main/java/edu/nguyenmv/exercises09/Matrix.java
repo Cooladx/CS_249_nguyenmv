@@ -105,7 +105,7 @@ public class Matrix {
     public String toPointString() {
         StringBuilder sb = new StringBuilder();
         sb.append("(");
-        for (int row = 0; row < (getRowCnt() - 1); row++) {
+        for(int row = 0; row < (getRowCnt()-1); row++) {
             if(row != 0) {
                 sb.append(",");
             }
@@ -115,4 +115,35 @@ public class Matrix {
         return sb.toString();
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        boolean isEqual = false;
+        if (obj instanceof Matrix mobj){
+            // Matrix mobj = (Matrix)obj;
+            if (getRowCnt() == mobj.getRowCnt()
+                && getColCnt() == mobj.getColCnt()) {
+                isEqual = true;
+                for(int i = 0; i < getColCnt(); i++) {
+                    for (int j = 0; j < getColCnt(); j++) {
+                        if (!MathUtil.isDoubleEqual(m[i][j], mobj.m[i][j])) {
+                            isEqual = false;
+                            break;
+                        }
+                    }
+                }
+                if(!isEqual) {
+                    break;
+                }
+            }
+
+
+        }
+        return isEqual;
+    }
+
 }
+
+// Added a comment on the end.
+// Another comment.
+// Yet another comment.
