@@ -1,5 +1,6 @@
 package edu.nguyenmv.exercises12;
 
+import java.util.*;
 import edu.nguyenmv.exercises09.Matrix;
 
 public class ShapeWorld {
@@ -29,5 +30,14 @@ public class ShapeWorld {
         System.out.println(s2);
         System.out.println(c1);
         System.out.println(c3);
+
+        ArrayList<Shape> allShapes = new ArrayList<Shape>();
+        System.out.println(allShapes.size());
+        allShapes.add(s1);
+        allShapes.add(s2);
+        allShapes.add(c1);
+        allShapes.add(c3);
+
+        System.out.println(allShapes.size());
     }
 }
