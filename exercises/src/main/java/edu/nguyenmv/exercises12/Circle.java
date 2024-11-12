@@ -10,9 +10,12 @@ public class Circle extends Shape {
         // super();
     }
 
-    public Circle(double radius) {
+    public Circle(double radius)
+            throws InvalidRadiusException {
+
         // super();
-        this.radius = radius;
+        //this.radius = radius;
+        setRadius(radius);
     }
 
     public Circle(double x, double y, boolean filled) {
@@ -42,6 +45,18 @@ public class Circle extends Shape {
 
     public double getRadius() {
         return radius;
+    }
+
+    public void setRadius(double radius)
+            throws InvalidRadiusException {
+
+        if(radius >= 0) {
+            this.radius = radius;
+        }
+        else {
+            throw new InvalidRadiusException(
+                    "Bad radius: " + radius);
+        }
     }
 
     @Override

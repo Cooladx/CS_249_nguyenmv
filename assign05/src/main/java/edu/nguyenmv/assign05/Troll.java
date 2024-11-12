@@ -6,7 +6,7 @@ public class Troll extends Giant{
     }
 
     public String toString() {
-        return "Troll" + super.toString();
+        return "Troll " + super.toString();
     }
     public String cook() {
         return "Mutton again...";

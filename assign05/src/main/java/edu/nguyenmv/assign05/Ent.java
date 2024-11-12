@@ -5,7 +5,7 @@ public class Ent extends Tree{
         super(name);
     }
     public String toString() {
-        return "Ent" + super.toString();
+        return "Ent " + super.toString();
     }
     public String speak() {
         return "HOOM";

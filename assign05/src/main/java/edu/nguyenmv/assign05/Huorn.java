@@ -5,7 +5,7 @@ public class Huorn extends Tree{
         super(name);
     }
     public String toString() {
-        return "Huorn" + super.toString();
+        return "Huorn " + super.toString();
     }
     public String speak() {
         return "<angry rustling>";
