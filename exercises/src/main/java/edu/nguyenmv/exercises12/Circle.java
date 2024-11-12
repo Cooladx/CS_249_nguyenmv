@@ -1,6 +1,7 @@
 package edu.nguyenmv.exercises12;
 import edu.nguyenmv.exercises09.Matrix;
 import edu.nguyenmv.exercises09.MathUtil;
+import edu.nguyenmv.exercises13.InvalidRadiusException;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -22,6 +23,16 @@ public class Circle extends Shape {
 
     public Circle(Matrix pos, boolean filled) {
         super(pos, filled);
+    }
+
+    public void setRadius(double radius) {
+        throws InvalidRadiusException {
+            if (radius >= 0) {
+                this.radius = radius;
+            } else {
+                throw new InvalidRadiusException("Bad radius: " + radius);
+            }
+
     }
 
     @Override
