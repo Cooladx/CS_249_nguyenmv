@@ -1,42 +1,48 @@
 package edu.nguyenmv.exercises13;
-import java.io.IOException;
+
 import java.util.*;
+import java.io.*;
+
 public class Quotient {
     public static String readFromFile(String filename)
-    throws IOException {
+            throws IOException {
+
         throw new IOException("HELP!");
     }
 
-    public static int divide(int x, int y ) {
-        if (y != 0) {
+    public static int divide(int x, int y) {
+        if(y != 0) {
             int r = x / y;
             return r;
         }
         else {
-            throw new ArithmeticException("DIVISION BY ZERO");
+            throw new ArithmeticException("DIVISION BY ZERO!");
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter two numbers: ");
 
+        System.out.println("Enter two numbers:");
         try {
             int a = input.nextInt();
             int b = input.nextInt();
             int result = divide(a, b);
             System.out.println("Answer: " + result);
+            readFromFile("test.txt");
         }
         catch(ArithmeticException e) {
             System.err.println("Don't divide by zero for fear of explosion.");
             System.err.println(e.getMessage());
         }
         catch(InputMismatchException e) {
-            System.err.println("Bad inputs");
+            System.err.println("Bad inputs.");
         }
-        catch (Exception e) {
+        catch(Exception e) {
             System.err.println(e);
         }
+
+
         System.out.println("DONE");
     }
 }
