@@ -28,16 +28,6 @@ public class Circle extends Shape {
         super(pos, filled);
     }
 
-    public void setRadius(double radius) {
-        throws InvalidRadiusException {
-            if (radius >= 0) {
-                this.radius = radius;
-            } else {
-                throw new InvalidRadiusException("Bad radius: " + radius);
-            }
-
-    }
-
     @Override
     public double getArea() {
         return Math.PI*radius*radius;

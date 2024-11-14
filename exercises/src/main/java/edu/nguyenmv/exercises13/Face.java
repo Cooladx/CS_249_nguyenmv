@@ -1,5 +1,7 @@
 package edu.nguyenmv.exercises13;
+
 import java.util.*;
+
 public class Face {
     private int [] indices = new int[3];
 
@@ -17,16 +19,13 @@ public class Face {
         indices[2] = parse.nextInt();
     }
 
-
-    public String toFaceOBJString () {
+    public String toFaceOBJString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("f ");
-        for (int i: indices) {
+        sb.append("f");
+        for(int i: indices) {
             sb.append(" ");
             sb.append(i);
         }
         return sb.toString();
     }
 }
-
-
