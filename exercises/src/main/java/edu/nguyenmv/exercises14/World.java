@@ -1,11 +1,13 @@
 package edu.nguyenmv.exercises14;
+
 import java.util.*;
+
 public class World {
     public static void cook(Edible e) {
         System.out.println(e.howToEat());
     }
 
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         Chicken c1 = new Chicken();
         Edible e1 = new Chicken();
         Animal a1 = new Chicken();
@@ -13,7 +15,7 @@ public class World {
 
         cook(e1);
         cook(c1);
-        if(a1 instanceof Edible ea1){
+        if(a1 instanceof Edible ea1) {
             cook(ea1);
         }
         cook(e2);
@@ -26,5 +28,7 @@ public class World {
         for(Flammable f: fuel) {
             System.out.println("- " + f.howToIgnite());
         }
+
+
     }
 }
