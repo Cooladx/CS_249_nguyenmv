@@ -29,8 +29,8 @@ public class Item implements Loadable {
 
     public void load(Scanner input) throws GameFileException {
         try {
-        input.next(ID);
-        input.nextInt(value);
+        ID = input.next();
+        value = input.nextInt();
         } catch (Exception e) {
             ID = "";
             value = 0;

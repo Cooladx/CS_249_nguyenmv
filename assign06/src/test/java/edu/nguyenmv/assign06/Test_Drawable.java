@@ -1,5 +1,5 @@
 package edu.nguyenmv.assign06;
-import edu.realemj.assign04.GameBoard;
+import edu.nguyenmv.assign04.GameBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.annotations.Test;
 
