@@ -52,6 +52,7 @@ public class Woods {
     public void printAllTrolls() {
         System.out.println("ALL TROLLS:");
         for(Giant giant: giants) {
+
             if(giant instanceof Troll troll) {
                 System.out.println("- " + troll.toString() + ": " + troll.cook());
             }
